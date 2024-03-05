@@ -1,0 +1,5 @@
+export * from './settingIcon'
+export * from './homeIcon'
+export * from './arrowRightIcon'
+export * from './personIcon'
+export * from './competitionBadgeIcon'
