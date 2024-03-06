@@ -1,33 +1,44 @@
-import Image from 'next/image'
+type Props = {
+	coverImage: string
+	images: string[]
+}
 
-const ImageGroup = () => {
+const ImageGroup = ( props: Props) => {
+
+	const {
+		coverImage,
+		images
+	} = props
+
 
 	return (
-		<>
-			{/* <Image 
-				src='/Assets/page_1_mask_curve.png' 
-				alt='hero' 
-				width={200}
-				height={100}
-			/>
-			<Image 
-				src='/Assets/page_1_curve.png' 
-				alt='hero' 
-				width={200}
-				height={100}
-			/> */}
-			<Image 
-				src='/Assets/page_1_hero-image.png' 
-				alt='hero' 
-				width={200}
-				height={100}
-				className="
-					w-40 h-40
-					bg-gradient-to-b:
-				"
-			/>
+		<div className='bg-inherit'>
+			<div className={`h-40 
+				[background-image:url(/Assets/page_1_mask_curve.png),_url(/Assets/page_1_curve_image.png)]
+				[background-repeat:no-repeat]
+				[background-size:850px_400px]
+				[background-position:20%_33%,40%_40%]
+			`}>
+			</div>
+			
 
-		</>
+			<div className={`h-32 -mt-8 
+				bg-[url(/Assets/page_1_hero-image.png)]
+				bg-no-repeat
+				bg-contain
+				bg-center
+			`}>
+			</div>
+			{/* <div className={`h-32 -mt-8 
+				[background-image:url(/Assets/page_1_hero-image.png)] 
+				[background-repeat:no-repeat]
+				[background-size:contain]
+				[background-position:center]
+			`}>
+			</div> */}
+
+
+		</div>
 	)
 }
 export default ImageGroup

@@ -1,6 +1,6 @@
 
 type Props = {
-	className: React.ComponentProps<'div'>['className']
+	className?: React.ComponentProps<'div'>['className']
 }
 export const SettingIcon = ({ className }: Props ) => {
 
