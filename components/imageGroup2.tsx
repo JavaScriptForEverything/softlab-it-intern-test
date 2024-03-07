@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { ArrowRightIcon, BackIcon, HeartIcon } from './icons'
 
 const ImageGroup = () => {
@@ -10,10 +11,12 @@ const ImageGroup = () => {
 				[background-position:0_0,center]
 			`}>
 
-				<div className='mt-28 px-12 bg-red-100/10 flex justify-between'>
-					<button className='bg-slate-50 rounded-full shadow-md m-1'>
-						<BackIcon className='text-slate-700' />
-					</button>
+				<div className='mt-28 px-12  flex justify-between'>
+					<Link href='/'>
+						<button className='bg-slate-50 rounded-full shadow-md m-1'>
+							<BackIcon className='text-slate-700' />
+						</button>
+					</Link>
 
 					<button className='bg-slate-50 rounded-full shadow-md m-1'>
 						<HeartIcon className='text-red-500' />
