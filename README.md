@@ -14,7 +14,6 @@ $ yarn build
 $ yarn start
 ```
 
-https://github.com/JavaScriptForEverything/softlab-it-intern-test/blob/main/public/page-1.png
 
 
 | Page-1                       	| Page-2 			| 
